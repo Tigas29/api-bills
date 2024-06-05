@@ -17,8 +17,3 @@ export class Category {
     this.color = color;
   }
 }
-
-const item1 = new Category({
-  color: '#000000',
-  title: 'teste',
-});
