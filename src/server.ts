@@ -7,5 +7,5 @@ app.use(json());
 app.use(routes);
 const port = 3333;
 app.listen(port, () => {
-  console.log('Server running on port 3000');
+  console.log('Server running on port' + port);
 });
