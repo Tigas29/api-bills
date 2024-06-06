@@ -11,8 +11,8 @@
   "keywords": [],
   "author": {
     "name": "Tiago Santos",
-    "email": "contato.tiagosantos04@gmail.com"	,
-    "url": "https://github.com/Tigas29"	
+    "email": "contato.tiagosantos04@gmail.com",
+    "url": "https://github.com/Tigas29"
   },
   "license": "ISC",
   "devDependencies": {
@@ -32,6 +32,9 @@
     "typescript-eslint": "^7.11.0"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "@types/node": "^20.14.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1"
   }
 }
