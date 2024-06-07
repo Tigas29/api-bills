@@ -1,16 +1,16 @@
 version: '3'
 
 services:
-  mongo:  
+  mongo:
     container_name: mongodb
-    restart: always 
+    restart: always
     image: mongo
     environment:
       MONGO_INITDB_ROOT_USERNAME: "bills"
       MONGO_INITDB_ROOT_PASSWORD: "pass123"
     ports:
       - '27017:27017'
-    networks: 
+    networks:
       - local
 
   app:
@@ -24,9 +24,9 @@ services:
       - .:/home/app
     ports:
       - '3333:3333'
-    networks: 
+    networks:
       - local
 
-networks: 
-  local:  
+networks:
+  local:
     name: local
