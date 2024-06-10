@@ -1,11 +1,13 @@
-FROM node:18
+# Use a versão específica do Node.js
+FROM node:18-alpine
 
-WORKDIR /app
+WORKDIR /home/app
 
-COPY package*.json ./
+COPY . ./
 
-RUN npm install
+RUN npm i
 
-COPY . .
+EXPOSE 3333
+
 
 CMD ["npm", "run", "dev"]
