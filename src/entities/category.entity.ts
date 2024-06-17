@@ -1,5 +1,5 @@
 type propsCategory = {
-  id?: string;
+  _id?: string;
   title: string;
   color: string;
 };
@@ -7,12 +7,12 @@ type propsCategory = {
 export class Category {
   // public represent that the istance will be able to acess this item.
   //private istance represent the istance will not be ableto acess this item
-  public id?: string;
+  public _id?: string;
   public title: string;
   public color: string;
 
-  constructor({ id, title, color }: propsCategory) {
-    this.id = id;
+  constructor({ _id, title, color }: propsCategory) {
+    this._id = _id;
     this.title = title;
     this.color = color;
   }

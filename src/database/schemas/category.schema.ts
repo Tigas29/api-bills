@@ -6,6 +6,7 @@ export const CategorySchema = new mongoose.Schema(
     color: String,
   },
   { versionKey: false }
+  //version of the schema
 );
 
 export const CategoryModel = mongoose.model('Category', CategorySchema);
